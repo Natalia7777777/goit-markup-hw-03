@@ -23,8 +23,19 @@ a {
   text-decoration: none;
 }
 
-p {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -44,6 +55,15 @@ p {
   color: var(--accent-color);
 }
 
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+
 /* --------HEADER--------- */
 .logo {
   font-family: Raleway;
@@ -54,7 +74,7 @@ p {
   color: var(--accent-color);
 }
 
-.header .logo > span {
+.logo-black {
   color: #000;
 }
 
@@ -86,6 +106,10 @@ p {
 
 /* --------HERO--------- */
 
+.hero {
+  margin-bottom: 94px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -111,6 +135,10 @@ p {
 
 /* -------FEATURES------- */
 
+.features {
+  margin-bottom: 94px;
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -118,6 +146,7 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-title-color);
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -129,6 +158,10 @@ p {
 
 /* --------SERVICES--------- */
 
+.services {
+  margin-bottom: 94px;
+}
+
 .services-title {
   font-weight: 700;
   font-size: 36px;
@@ -136,9 +169,15 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
+  margin-bottom: 50px;
 }
 
 /* --------TEAM--------- */
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .team-title {
   font-weight: 700;
@@ -147,15 +186,22 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
+  margin-bottom: 50px;
 }
 
-.team-member {
+.team-member-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
+  margin-bottom: 10px;
+}
+
+.team-member {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-text {
@@ -166,7 +212,7 @@ p {
   color: var(--first-text-color);
 }
 
-/* --------ADDRESS--------- */
+/* --------FOOTER--------- */
 
 .footer {
   background: var(--second-bg-color);
@@ -188,10 +234,19 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.logo-white {
+  color: #fff;
+}
+
 /* --------PROJECT--------- */
 
-.footer .logo > span {
-  color: #fff;
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.projects-button-list {
+  margin-bottom: 30px;
 }
 
 .project-btn {
@@ -210,6 +265,11 @@ p {
   cursor: pointer;
 }
 
+.project-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -217,6 +277,7 @@ p {
   letter-spacing: 0.06em;
   text-transform: capitalize;
   color: var(--first-title-color);
+  margin-bottom: 4px;
 }
 
 .project-text {
