@@ -59,9 +59,13 @@ ul {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   outline: 2px solid tomato;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* --------HEADER--------- */
@@ -106,10 +110,6 @@ ul {
 
 /* --------HERO--------- */
 
-.hero {
-  margin-bottom: 94px;
-}
-
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -135,10 +135,6 @@ ul {
 
 /* -------FEATURES------- */
 
-.features {
-  margin-bottom: 94px;
-}
-
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -158,10 +154,6 @@ ul {
 
 /* --------SERVICES--------- */
 
-.services {
-  margin-bottom: 94px;
-}
-
 .services-title {
   font-weight: 700;
   font-size: 36px;
@@ -173,11 +165,6 @@ ul {
 }
 
 /* --------TEAM--------- */
-
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .team-title {
   font-weight: 700;
