@@ -60,7 +60,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 
 .section {
@@ -69,6 +68,11 @@ ul {
 }
 
 /* --------HEADER--------- */
+
+.header {
+  border: 1px solid #ececec;
+}
+
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -119,6 +123,7 @@ ul {
   text-transform: uppercase;
   color: var(--second-title-color);
   background: var(--second-bg-color);
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -131,6 +136,16 @@ ul {
   letter-spacing: 0.06em;
   color: var(--second-title-color);
   background: var(--accent-bg-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  border-color: #188ce8;
 }
 
 /* -------FEATURES------- */
@@ -154,6 +169,10 @@ ul {
 
 /* --------SERVICES--------- */
 
+.services {
+  padding-top: 0;
+}
+
 .services-title {
   font-weight: 700;
   font-size: 36px;
@@ -165,6 +184,10 @@ ul {
 }
 
 /* --------TEAM--------- */
+
+.team {
+  background-color: #f5f4fa;
+}
 
 .team-title {
   font-weight: 700;
@@ -243,6 +266,9 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  border-color: transparent;
 }
 
 .project-btn:hover,
