@@ -71,9 +71,28 @@ ul {
 
 .header {
   border: 1px solid #ececec;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -88,13 +107,20 @@ ul {
 
 .header-nav,
 .auth-nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  display: flex;
+  margin-left: auto;
+}
+
+.header-nav .item:not(:first-child),
+.auth-nav .item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--first-title-color);
 }
 
@@ -105,6 +131,9 @@ ul {
 
 .auth-link {
   color: var(--first-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth-link:hover,
@@ -114,7 +143,16 @@ ul {
 
 /* --------HERO--------- */
 
+.hero {
+  background: var(--second-bg-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
+
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -122,25 +160,23 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-title-color);
-  background: var(--second-bg-color);
-  margin-bottom: 30px;
 }
 
 .hero-btn {
+  padding: 6px 22px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--second-title-color);
   background: var(--accent-bg-color);
-  border-radius: 4px;
-  padding: 6px 22px;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover,
@@ -151,13 +187,14 @@ ul {
 /* -------FEATURES------- */
 
 .features-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-title-color);
-  margin-bottom: 10px;
 }
 
 .features-text {
@@ -174,13 +211,14 @@ ul {
 }
 
 .services-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
-  margin-bottom: 50px;
 }
 
 /* --------TEAM--------- */
@@ -190,23 +228,25 @@ ul {
 }
 
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
-  margin-bottom: 50px;
 }
 
 .team-member-title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
-  margin-bottom: 10px;
 }
 
 .team-member {
@@ -260,15 +300,16 @@ ul {
 }
 
 .project-btn {
+  border-radius: 4px;
+  padding: 10px 32px;
+  border-color: transparent;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
-  border-radius: 4px;
-  padding: 10px 32px;
-  border-color: transparent;
 }
 
 .project-btn:hover,
@@ -284,13 +325,14 @@ ul {
 }
 
 .project-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-transform: capitalize;
   color: var(--first-title-color);
-  margin-bottom: 4px;
 }
 
 .project-text {
