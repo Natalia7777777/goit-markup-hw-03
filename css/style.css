@@ -38,6 +38,11 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  min-width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -89,16 +94,18 @@ ul {
 }
 
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+.header .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .logo-black {
@@ -151,6 +158,9 @@ ul {
 }
 
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -185,6 +195,18 @@ ul {
 }
 
 /* -------FEATURES------- */
+
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-item:not(:first-child) {
+  margin-left: 30px;
+}
 
 .features-title {
   margin-bottom: 10px;
@@ -221,10 +243,36 @@ ul {
   color: var(--first-title-color);
 }
 
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.services-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 /* --------TEAM--------- */
 
 .team {
   background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.team-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .team-title {
@@ -252,6 +300,11 @@ ul {
 .team-member {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  background-color: var(--first-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-text {
@@ -265,7 +318,22 @@ ul {
 /* --------FOOTER--------- */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--second-bg-color);
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo-white {
+  color: #fff;
+}
+
+.footer-item:not(:first-child) {
+  margin-top: 9px;
 }
 
 .contacts-link-address {
@@ -284,19 +352,20 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.logo-white {
-  color: #fff;
-}
-
 /* --------PROJECT--------- */
 
-.projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.first-projects-list {
+  margin-bottom: 34px;
 }
 
-.projects-button-list {
-  margin-bottom: 30px;
+.projects-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
+.project-btn-item:not(:first-child) {
+  margin-left: 8px;
 }
 
 .project-btn {
@@ -319,9 +388,21 @@ ul {
   cursor: pointer;
 }
 
+.second-project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.second-project-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 .project-description {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
 }
 
 .project-title {
