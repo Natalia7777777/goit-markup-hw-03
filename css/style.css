@@ -61,7 +61,7 @@ img {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -154,7 +154,7 @@ img {
   background: var(--second-bg-color);
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -252,6 +252,7 @@ img {
 
 .services-item {
   width: calc(100% / 3 - 30px);
+  height: auto;
   margin-left: 30px;
   margin-bottom: 30px;
 }
@@ -354,14 +355,10 @@ img {
 
 /* --------PROJECT--------- */
 
-.first-projects-list {
-  margin-bottom: 34px;
-}
-
 .projects-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
+  margin-bottom: 50px;
 }
 
 .project-btn-item:not(:first-child) {
@@ -370,7 +367,7 @@ img {
 
 .project-btn {
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 6px 22px;
   border-color: transparent;
 
   font-weight: 500;
@@ -399,12 +396,14 @@ img {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-
-  border: 1px solid #eeeeee;
 }
 
 .project-description {
   padding: 20px 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .project-title {
